@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sweet Messages For Rhys</title>
+    <style>
+        body {
+            background-color: #ffe6ea;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 3em;
+            margin-top: 50px;
+        }
+        p {
+            color: #555;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #ff69b4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-top: 30px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #ff8ac6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sweet & Motivational Messages</h1>
+    <p>Click the buttons to receive a sweet or motivational message:</p>
+    <button onclick="showSweetMessage()">Sweet Message</button>
+    <button onclick="showMotivationalMessage()">Motivational Message</button>
+    <script>
+        function showSweetMessage() {
+let messages = [
+    "I love you more than anything in the world.",
+    "You make me feel like the luckiest person alive.",
+    "You are my soulmate and my forever love.",
+    "My heart beats for you and only you.",
+    "You are the reason why I wake up every morning with a smile on my face.",
+    "I cherish every moment I spend with you.",
+    "I cannot imagine my life without you by my side.",
+    "You are the missing piece that makes me whole.",
+    "I will always be there for you, through thick and thin.",
+    "Your love is the most precious thing in my life.",
+    "You have a heart of gold, and I am grateful to have it all to myself.",
+    "Your beauty takes my breath away, every single time.",
+    "I am proud to call you mine, and I will never take you for granted.",
+    "Your love is my anchor, and I am so grateful for it.",
+    "You are the best thing that ever happened to me, and I will always cherish you.",
+];
+
+            let randomIndex = Math.floor(Math.random() * messages.length);
+            let message = messages[randomIndex];
+            alert(message);
+        }
+        function showMotivationalMessage() {
+            let messages = [
+                "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.",
+                "Don't watch the clock; do what it does. Keep going.",
+                "Believe you can and you're halfway there.",
+                "Your only limit is the amount of doubt you have in yourself.",
+                "It does not matter how slowly you go as long as you do not stop.",
+                "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+                "The only way to do great work is to love what you do.",
+                "The journey of a thousand miles begins with one step.",
+                "The only limit to our realization of tomorrow will be our doubts of today.",
+                "You are never too old to set another goal or to dream a new dream.",
+            ];
+            let randomIndex = Math.floor(Math.random() * messages.length);
+            let message = messages[randomIndex];
+            alert(message);
+        }
+    </script>
+</body>
+</html>
