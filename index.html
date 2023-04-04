@@ -35,10 +35,11 @@
     </style>
 </head>
 <body>
-    <h1>Sweet Message For Rhys</h1>
+    <h1>Sweet & Motivational Messages</h1>
     <p>Click the buttons to receive a sweet or motivational message:</p>
     <button onclick="showSweetMessage()">Sweet Message</button>
     <button onclick="showMotivationalMessage()">Motivational Message</button>
+    <button onclick="showLoveMessage()">Love Message</button>    
     <script>
         function showSweetMessage() {
 let messages = [
@@ -57,6 +58,7 @@ let messages = [
     "I am proud to call you mine, and I will never take you for granted.",
     "Your love is my anchor, and I am so grateful for it.",
     "You are the best thing that ever happened to me, and I will always cherish you.",
+    "I love you.",
 ];
 
             let randomIndex = Math.floor(Math.random() * messages.length);
@@ -79,7 +81,17 @@ let messages = [
             let randomIndex = Math.floor(Math.random() * messages.length);
             let message = messages[randomIndex];
             alert(message);
-        }
+            }
+            function showLoveMessage() {               
+    let messages = [
+        "My Baby, every moment I spend with you feels like a dream come true. Your love has filled my life with happiness, laughter, and endless joy. You are the missing puzzle piece that completes me, and I cannot imagine my life without you. You have a heart of gold, and your kindness and love know no bounds. I am grateful to have you by my side, and I will always cherish and love you with all my heart.",
+        "Babypot, I am writing this love letter to let you know how much you mean to me. You are the love of my life, and every day, I fall more in love with you. Your smile, your touch, and your presence light up my world, and I am forever grateful for you. I promise to love you, respect you, and support you in everything that you do. You are my forever, and I love you more than anything in this world.",
+        "My Rhys, I want you to know that you are the most special person in my life. Your love has filled my life with joy, laughter, and warmth, and I am forever grateful for you. You are my rock, my support, and my best friend, and I cannot imagine my life without you. I love you more than words can express, and I promise to love you unconditionally, through thick and thin. You are my forever, and I will cherish and love you always."
+    ];
+    let randomIndex = Math.floor(Math.random() * messages.length);
+    let message = messages[randomIndex];
+    alert(message);
+    }
     </script>
 </body>
 </html>
